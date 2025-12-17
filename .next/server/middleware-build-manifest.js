@@ -1,1 +1,40 @@
-globalThis.__BUILD_MANIFEST={polyfillFiles:["static/chunks/polyfills-42372ed130431b0a.js"],devFiles:[],ampDevFiles:[],lowPriorityFiles:[],rootMainFiles:[],rootMainFilesTree:{},pages:{"/":["static/chunks/webpack-d97060cee9cf928f.js","static/chunks/framework-b1e5f14688f9ffe6.js","static/chunks/main-65d290c6ecbd65f1.js","static/css/433d8b4448577d18.css","static/chunks/pages/index-7f3592b40e2d97c0.js"],"/404":["static/chunks/webpack-d97060cee9cf928f.js","static/chunks/framework-b1e5f14688f9ffe6.js","static/chunks/main-65d290c6ecbd65f1.js","static/css/daa86e3f646cb252.css","static/chunks/pages/404-f573018b789e3247.js"],"/_app":["static/chunks/webpack-d97060cee9cf928f.js","static/chunks/framework-b1e5f14688f9ffe6.js","static/chunks/main-65d290c6ecbd65f1.js","static/css/d9bc0946c1bd7542.css","static/chunks/pages/_app-79581b8fcaff7cea.js"],"/_error":["static/chunks/webpack-d97060cee9cf928f.js","static/chunks/framework-b1e5f14688f9ffe6.js","static/chunks/main-65d290c6ecbd65f1.js","static/chunks/pages/_error-cf5db1610f7a1281.js"],"/about":["static/chunks/webpack-d97060cee9cf928f.js","static/chunks/framework-b1e5f14688f9ffe6.js","static/chunks/main-65d290c6ecbd65f1.js","static/css/226efd565ee42866.css","static/chunks/pages/about-91c6e1593fe96c8b.js"],"/advanced-calculator":["static/chunks/webpack-d97060cee9cf928f.js","static/chunks/framework-b1e5f14688f9ffe6.js","static/chunks/main-65d290c6ecbd65f1.js","static/css/d891d6abcc1abd46.css","static/chunks/pages/advanced-calculator-d835adbb73c9e9d3.js"],"/basic-calculator":["static/chunks/webpack-d97060cee9cf928f.js","static/chunks/framework-b1e5f14688f9ffe6.js","static/chunks/main-65d290c6ecbd65f1.js","static/css/eee2afcdd5334a7a.css","static/chunks/pages/basic-calculator-26245bf8182fc37e.js"],"/contact":["static/chunks/webpack-d97060cee9cf928f.js","static/chunks/framework-b1e5f14688f9ffe6.js","static/chunks/main-65d290c6ecbd65f1.js","static/css/5314710137ee19bc.css","static/chunks/pages/contact-ab6d1e14f5e25132.js"],"/free-compound-interest-calculator":["static/chunks/webpack-d97060cee9cf928f.js","static/chunks/framework-b1e5f14688f9ffe6.js","static/chunks/main-65d290c6ecbd65f1.js","static/css/24f551ac0155ca4b.css","static/chunks/pages/free-compound-interest-calculator-0690ab410f5ee7c0.js"],"/privacy-policy":["static/chunks/webpack-d97060cee9cf928f.js","static/chunks/framework-b1e5f14688f9ffe6.js","static/chunks/main-65d290c6ecbd65f1.js","static/css/c2e504f605870753.css","static/chunks/pages/privacy-policy-e953111298c3dc9f.js"],"/retirement-planner":["static/chunks/webpack-d97060cee9cf928f.js","static/chunks/framework-b1e5f14688f9ffe6.js","static/chunks/main-65d290c6ecbd65f1.js","static/css/e38642cd10c25846.css","static/chunks/pages/retirement-planner-1192ace503be4c47.js"],"/savings-calculator":["static/chunks/webpack-d97060cee9cf928f.js","static/chunks/framework-b1e5f14688f9ffe6.js","static/chunks/main-65d290c6ecbd65f1.js","static/css/f7c6cfd96fce14b9.css","static/chunks/pages/savings-calculator-63def52e04ea0c53.js"]},ampFirstPages:[]},globalThis.__BUILD_MANIFEST.lowPriorityFiles=["/static/"+process.env.__NEXT_BUILD_ID+"/_buildManifest.js",,"/static/"+process.env.__NEXT_BUILD_ID+"/_ssgManifest.js"];
+globalThis.__BUILD_MANIFEST = {
+  "polyfillFiles": [
+    "static/chunks/polyfills.js"
+  ],
+  "devFiles": [
+    "static/chunks/react-refresh.js"
+  ],
+  "ampDevFiles": [],
+  "lowPriorityFiles": [],
+  "rootMainFiles": [],
+  "rootMainFilesTree": {},
+  "pages": {
+    "/": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/index.js"
+    ],
+    "/404": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/404.js"
+    ],
+    "/_app": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/_app.js"
+    ],
+    "/_error": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/_error.js"
+    ]
+  },
+  "ampFirstPages": []
+};
+globalThis.__BUILD_MANIFEST.lowPriorityFiles = [
+"/static/" + process.env.__NEXT_BUILD_ID + "/_buildManifest.js",
+,"/static/" + process.env.__NEXT_BUILD_ID + "/_ssgManifest.js",
+
+];
