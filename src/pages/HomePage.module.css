@@ -1,0 +1,596 @@
+/* Base Reset */
+.homePage {
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.heroSection {
+  text-align: center;
+  padding: 10rem 5% 8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.heroTitle {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  margin-bottom: 1.2rem;
+  background: linear-gradient(to right, #ffffff, #b8c2e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.heroSubtitle {
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  color: #b8c2e0;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+.ctaButton {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.4), rgba(0, 191, 165, 0.4));
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+  font-weight: 600;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 6px 20px rgba(0, 191, 165, 0.3);
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  outline: none;
+}
+
+.ctaButton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.7s;
+}
+
+.ctaButton:hover::before {
+  left: 100%;
+}
+
+.ctaButton:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 191, 165, 0.4);
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.5), rgba(0, 191, 165, 0.5));
+}
+
+/* Features Section */
+.featuresSection {
+  padding: 7rem 5%;
+  text-align: center;
+}
+
+.sectionHeading {
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  margin-bottom: 3rem;
+  background: linear-gradient(to right, #ffffff, #b8c2e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  position: relative;
+}
+
+.featureCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  margin-top: 3rem;
+  padding: 0 2rem;
+}
+
+.featureCard {
+  background: rgba(255, 255, 255, 0.04);
+  padding: 2.5rem 2rem;
+  border-radius: 18px;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.featureCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(0, 191, 165, 0.1) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: -1;
+}
+
+.featureCard:hover::before {
+  opacity: 1;
+}
+
+.featureCard:hover {
+  transform: translateY(-8px) scale(1.015);
+  box-shadow: 0 16px 40px rgba(0, 191, 165, 0.2);
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.featureCard .icon {
+  font-size: clamp(2rem, 6vw, 3rem);
+  margin-bottom: 1.5rem;
+  color: #00bfa5;
+  text-shadow: 0 0 15px rgba(0, 191, 165, 0.2);
+}
+
+.featureCard h3 {
+  color: #ffffff;
+  margin-bottom: 1rem;
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}
+
+.featureCard p {
+  color: #d1e0ff;
+  line-height: 1.7;
+  font-size: clamp(0.85rem, 2vw, 1rem);
+  font-weight: 300;
+  margin: 0 auto;
+  max-width: 240px;
+}
+
+/* How It Works Section */
+.howItWorks {
+  padding: 7rem 5%;
+  text-align: center;
+}
+
+.stepsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+  padding: 0 2rem;
+}
+
+.stepCard {
+  background: rgba(255, 255, 255, 0.04);
+  padding: 2rem;
+  border-radius: 18px;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  transition: all 0.4s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.stepCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(0, 191, 165, 0.08) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: -1;
+}
+
+.stepCard:hover::before {
+  opacity: 1;
+}
+
+.stepCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 35px rgba(0, 191, 165, 0.18);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.stepNumber {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #00bfa5, #0088aa);
+  border-radius: 50%;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  color: white;
+}
+
+.stepCard h3 {
+  color: #ffffff;
+  margin-bottom: 1rem;
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}
+
+.stepCard p {
+  color: #d1e0ff;
+  line-height: 1.7;
+  font-size: clamp(0.85rem, 2vw, 1rem);
+  font-weight: 300;
+  margin: 0 auto;
+  max-width: 220px;
+}
+
+/* Examples Section */
+.examplesSection {
+  padding: 7rem 5%;
+  text-align: center;
+}
+
+.examplesContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  margin-top: 3rem;
+  padding: 0 2rem;
+}
+
+.exampleCard {
+  background: rgba(255, 255, 255, 0.04);
+  padding: 2.5rem 2rem;
+  border-radius: 18px;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  transition: all 0.4s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.exampleCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(0, 191, 165, 0.08) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: -1;
+}
+
+.exampleCard:hover::before {
+  opacity: 1;
+}
+
+.exampleCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 35px rgba(0, 191, 165, 0.18);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.exampleCard h3 {
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}
+
+.exampleCard .scenario {
+  color: #b8c2e0;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.exampleDetails {
+  text-align: left;
+}
+
+.detailRow, .resultRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+  font-size: 0.9rem;
+}
+
+.detailRow span, .resultRow span {
+  color: #b8c2e0;
+}
+
+.detailRow strong, .resultRow strong {
+  color: #e6f1ff;
+}
+
+.resultHighlight {
+  color: #00bfa5 !important;
+  font-weight: 700;
+}
+
+.interestHighlight {
+  color: #ff6b6b !important;
+  font-weight: 700;
+}
+
+/* Testimonials Section */
+.testimonialsSection {
+  padding: 7rem 5%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.01);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.testimonialCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  margin-top: 3rem;
+  padding: 0 2rem;
+}
+
+.testimonialCard {
+  background: rgba(255, 255, 255, 0.04);
+  padding: 2.5rem 2rem;
+  border-radius: 18px;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  transition: all 0.4s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonialCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(0, 191, 165, 0.08) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: -1;
+}
+
+.testimonialCard:hover::before {
+  opacity: 1;
+}
+
+.testimonialCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 35px rgba(0, 191, 165, 0.18);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.testimonialCard p {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  color: #d1e0ff;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  font-weight: 300;
+  position: relative;
+}
+
+.testimonialCard p::before {
+  content: "";
+  font-size: 3rem;
+  color: rgba(0, 191, 165, 0.1);
+  position: absolute;
+  top: -1.2rem;
+  left: -0.5rem;
+  line-height: 1;
+}
+
+.testimonialCard strong {
+  color: #00bfa5;
+  font-weight: 600;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  letter-spacing: -0.1px;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+/* CTA Banner */
+.ctaBanner {
+  padding: 8rem 5%;
+  text-align: center;
+  background: rgba(0, 191, 165, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  position: relative;
+}
+
+.ctaBanner h3 {
+  font-size: clamp(1.6rem, 3.5vw, 2rem);
+  margin-bottom: 2.5rem;
+  color: #ffffff;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  opacity: 0.95;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animateOnHover {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 900px) {
+  .heroSection {
+    padding: 8rem 5% 6rem;
+  }
+
+  .heroTitle {
+    font-size: clamp(2rem, 5vw, 2.8rem);
+  }
+
+  .heroSubtitle {
+    font-size: clamp(0.9rem, 3vw, 1.2rem);
+  }
+
+  .sectionHeading {
+    font-size: clamp(1.7rem, 4vw, 2.2rem);
+  }
+
+  .featureCard,
+  .testimonialCard,
+  .exampleCard,
+  .stepCard {
+    padding: 2rem 1.5rem;
+  }
+
+  .featureCard .icon,
+  .stepNumber {
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    padding: 7rem 5% 5rem;
+  }
+
+  .heroTitle {
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+  }
+
+  .heroSubtitle {
+    font-size: clamp(0.9rem, 3.5vw, 1.1rem);
+    margin-bottom: 2.5rem;
+  }
+
+  .sectionHeading {
+    font-size: clamp(1.6rem, 4vw, 2rem);
+  }
+
+  .featureCards,
+  .testimonialCards,
+  .examplesContainer,
+  .stepsContainer {
+    gap: 2rem;
+  }
+
+  .featureCard,
+  .testimonialCard,
+  .exampleCard,
+  .stepCard {
+    padding: 1.8rem 1.5rem;
+  }
+
+  .featureCard .icon {
+    font-size: clamp(1.6rem, 5vw, 2.2rem);
+  }
+
+  .ctaButton {
+    padding: 0.7rem 1.8rem;
+    font-size: clamp(0.85rem, 2.5vw, 1rem);
+  }
+
+  .ctaBanner h3 {
+    font-size: clamp(1.4rem, 4vw, 1.8rem);
+    margin-bottom: 2rem;
+  }
+
+  .ctaBanner {
+    padding: 6rem 5% 5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroSection {
+    padding: 6rem 4% 4rem;
+  }
+
+  .heroTitle {
+    font-size: clamp(1.6rem, 6vw, 2.2rem);
+    line-height: 1.3;
+  }
+
+  .heroSubtitle {
+    font-size: clamp(0.85rem, 4vw, 1rem);
+    margin-bottom: 2rem;
+  }
+
+  .sectionHeading {
+    font-size: clamp(1.5rem, 5vw, 1.8rem);
+    margin-bottom: 2rem;
+  }
+
+  .featureCards,
+  .testimonialCards,
+  .examplesContainer,
+  .stepsContainer {
+    gap: 1.8rem;
+  }
+
+  .featureCard,
+  .testimonialCard,
+  .exampleCard,
+  .stepCard {
+    padding: 1.6rem 1.3rem;
+  }
+
+  .featureCard h3,
+  .testimonialCard strong,
+  .stepCard h3 {
+    font-size: 0.95rem;
+  }
+
+  .featureCard p,
+  .testimonialCard p,
+  .stepCard p {
+    font-size: 0.85rem;
+  }
+
+  .ctaButton {
+    padding: 0.7rem 1.6rem;
+    font-size: 0.9rem;
+  }
+
+  .ctaBanner {
+    padding: 5rem 4% 4rem;
+  }
+
+  .ctaBanner h3 {
+    font-size: clamp(1.3rem, 5vw, 1.6rem);
+  }
+}
