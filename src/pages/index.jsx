@@ -222,7 +222,7 @@ const HomePage = () => {
             <span className={styles.heroFeatures}> Visual Charts • No Signup • 100% Private • Instant Results</span>
           </p>
           <div className={styles.ctaContainer}>
-            <Link href="/compound-interest-calculator" className={styles.ctaButton}>
+            <Link href="/free-compound-interest-calculator" className={styles.ctaButton}>
               Start Calculating Investment Growth →
             </Link>
             <div className={styles.trustBadges}>

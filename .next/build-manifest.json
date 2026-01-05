@@ -32,6 +32,11 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
+    ],
+    "/free-compound-interest-calculator": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/free-compound-interest-calculator.js"
     ]
   },
   "ampFirstPages": []
