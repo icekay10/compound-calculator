@@ -2,7 +2,15 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+  "/404": "pages/404.html",
+  "/api/indexnow": "pages/api/indexnow.js",
+  "/privacy-policy": "pages/privacy-policy.html",
+  "/savings-calculator": "pages/savings-calculator.html",
+  "/contact": "pages/contact.js",
+  "/about": "pages/about.js",
+  "/basic-calculator": "pages/basic-calculator.js",
   "/free-compound-interest-calculator": "pages/free-compound-interest-calculator.js",
+  "/advanced-calculator": "pages/advanced-calculator.js",
   "/": "pages/index.js",
-  "/404": "pages/404.js"
+  "/retirement-planner": "pages/retirement-planner.js"
 }
